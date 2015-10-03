@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
@@ -10,25 +10,183 @@
     <meta name="author" content="Makcim Zukov">
     <!-- favicon.ico -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/fira/fira.css">
+    <link rel="stylesheet" href="fonts/Proxima-Nova/proximaNovaCond-Semibold.otf">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about-me.css">
     <!-- modernizer -->
-    <script crs="bower/modernizer/modernizr.js"></script>
+   <script crs="bower/modernizer/modernizr.js"></script>
 </head>
 <body>
-<!--[if lt IE 8]
+<!--[if lt IE 8]>
 <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/"обновите</a> его!</p>
 <![endif]-->
- <h1>Проверка локльного сервера</h1>
- <h3>nfv</h3>
+ <div class="wrapper">
+ <div class="main-content">
+  <header class="page-header">
+   <div class="container-big">
+    <a class="header-logo-link">
+     <img src="picter/logo.png" alt="Сайт портфолио" class="logo-img">
+    </a>
+
+     <ul class="socials">
+      <li class="social-item">
+        <a href="http://vk.com" target="_blank" class="socials-link vk">
+                vk.com
+        </a>
+      </li>
+      <li class="social-item">
+         <a href="http://twitter.com" target="_blank" class="socials-link tw">
+                twitter.com
+         </a>
+      </li>
+      <li class="social-item">
+         <a href="http://facebook.com" target="_blank" class="socials-link fb">
+                facebook.com
+         </a>
+      </li>
+      <li class="social-item">
+         <a href="http://github.com" target="_blank" class="socials-link gt">
+                github.com
+         </a>
+      </li>
+      </ul>
+      </div>
+      
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item current"><a href="" class="navigation-link">Обо мне</a></li>
+                    <li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
+                    <li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+                </ul>
+            </nav>
+            <address class="contacts">
+            <!-- Написать -->  
+            <ul class="my-contacts">
+                <li class="contacts-name">
+                  <div class="contacts-me">Контакты</div>  
+                </li>
+                <li class="contacts-mail">
+                 <a href="http://mail.ru" class="contacts-ad">
+                 <div class="contacts-hum">lkekcz@mail.ru</div> </a>
+                 </li>
+                 <li class="contacts-phone">
+                 <a href="2233443" class="contacts-ad">
+                 <div class="contacts-hum">2233443</div></a>
+                 </li>
+                 <li class="contacts-skype">
+                 <a href="http://skype.com" class="contacts-ad">
+                 <div class="contacts-hum">Пааазвани</div></a>
+                 </li>
+            </ul>
+              
+            </address>
+        </aside>
+        <!-- Изменяемый контент -->
+        <div class="variable-content">
+        <div class="aboutbox">
+        <h2 class="aboutbox-header">Основная информация</h2>
+        <div class="aboutbox-body clearfix">
+         <div class="image-wrap">
+           <div class="avatar-box"><img src="picter/av.png" alt="Максим Жуков" class="avatar"></div>  
+         </div>
+         <div class="worksheet-wrap">
+           <ul class="worksheet-list">
+               <li class="worksheet-item clearfix">
+                   <div class="worksheet-what">Меня зовут</div>
+                   <div class="worksheet-info">Максим Жуков</div>
+                   
+               </li>
+               <li class="worksheet-item clearfix">
+                 <div class="worksheet-what">Мой возраст</div> <div class="worksheet-info">39 лет</div> 
+                 
+               </li>
+               <li class="worksheet-item clearfix">
+                 <div class="worksheet-what">Мой город</div> <div class="worksheet-info">Кириши, Россия</div> 
+                 
+               </li>
+               <li class="worksheet-item clearfix">
+                 <div class="worksheet-what">Моя специализация</div> <div class="worksheet-info">FRONTEND разработчик</div> 
+                 
+               </li>
+               <div class="worksheet-item clearfix">
+                 <div class="worksheet-what">Ключевые навыки:</div> <div class="worksheet-info skills"></div>
+                 <ul class="skills-list">
+                 <li class="skills-item">html</li>
+                 <li class="skills-item">css</li>
+                 <li class="skills-item">javascript</li>
+                 <li class="skills-item">gulp</li>
+                 <li class="skills-item">git</li>
+                </ul>
+                </div>
+                </div>
+                </ul>  
+         </div> 
+         </div>
+         <div class="aboutbox">
+           <h2 class="aboutbox-header">
+             Опыт работы
+           </h2>
+           <div class="info-me">
+           <ul class="box-list">
+             <li class="box-item bag-icon">
+              <div class="where">Кириши</div> 
+              <div class="time">октябрь 2004-май 2010</div>
+             </li>
+             <li class="box-item bag-icon">
+              <div class="where">Кириши</div> 
+              <div class="time">октябрь 2010-сентябрь 2015</div>
+             </li>
+            
+           </ul>
+           </div>
+         </div>
+          <div class="aboutbox">
+           <h2 class="aboutbox-header">
+             Образование
+           </h2>
+           <div class="info-me">
+           <ul class="box-list">
+             <li class="box-item hat-icon">
+              <div class="where">Северо-западный технический университет</div> 
+              <div class="time">сентябрь 2005 - июнь 2010</div>
+             </li>
+             <li class="box-item Doc-icon">
+              <div class="where">Обучение в Loftscool</div> 
+              <div class="time">сентябрь 2015 - по настоящее время</div>
+             </li>
+            
+           </ul>
+           </div>
+         </div>
+        </div>
+      </div>
+  </div>  
+</div>
+<footer class="page-footer">
+  <div class="container">
+    <div class="lock">
+      <a href="/login.html" class="lock-inner">Войти</a>  
+    </div>
+    <div class="copyright">&copy 2015, Это мой сайт,пожалуйста, не копируйте и не воруйте его</div>
+  </div>
+</footer>
 
  <!-- vendor JS -->
-<script src="bower/jguery/jguery.js"></script>
-<!-- JS -->
-<script src="js/main.js"></script>   
+ <script src="bower/jguery/dist/jguery.js"></script>
+<!-- JS -->  
+ <script src="js/main.js"></script>   
 </body>
-</html>
+</html>  
+
+
+
+

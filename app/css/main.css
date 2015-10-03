@@ -1,0 +1,402 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: url(../picter/comppattern.png) repeat;
+    font: normal 1em 'fira_sanslight';
+    color: #4a545d;
+}
+
+  /* Общие классы */
+  .container{
+    width: 960px;
+    margin: 0 auto
+  }
+  .text-center{
+    text-align: center;
+  }
+  .pull-left{
+    float: left;
+  }
+  .pull-right{
+    float: right;
+  }
+
+  /* Clearfix */
+  .conttainer:before, .clearfix:before,
+  .container:after, .clearfix:after {
+    content: " ";/* 1*/
+    display: table; /* 2 */
+  }
+  .container:after, .clearfix:after {
+    clear: both;
+  }
+
+  /* Шапка */
+  .container-big{
+    max-width: 1200px;
+    min-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+  }
+  .container-big {
+    background-color: #eff3f7;
+    background-image: -webkit-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -moz-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -ms-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -o-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0px 116px;
+
+    margin-bottom: 39px;
+}
+  .page-header{
+    height: 119px;
+    background: #eff3f7 url('../') bottom center no-repeat;
+    position: relative;
+    margin-bottom: 39px;
+  }
+  .page-header .header-logo-link{
+    position: absolute;
+    top: 39px;
+    left: 0;
+  }
+  .page-header .header-logo-text{
+    position: absolute;
+    left: -9999px;
+  }
+  .page-header .socials {
+    position: absolute;
+    right: 0;
+    top: 36px;
+  }
+
+
+
+.socials {
+  position: absolute;
+  right: -12px;
+  top: 36px;
+}
+.social-item {
+  display: inline-block;
+
+ /* margin: 0 12px;*/
+}
+.social-link {
+  background: url(../picter/res.png);
+  display: block;
+  width: 47px;
+  height: 47px;
+}
+.vk {
+  background-position: 0px 0px;
+}
+.tw {
+  background-position: 0px -226px;
+}
+.fb {
+  background-position: 0px -112px;
+}
+.gh {
+  background-position: 0px -340px;
+}
+.vk:hover {
+  background-position: 0px -56px;
+}
+.tw:hover {
+  background-position: 0px -283px;
+}
+.fb:hover {
+  background-position: 0px -169px;
+}
+.gh:hover {
+  background-position: 0px -397px;
+}
+
+
+ /* Сайдбар */
+ .sidebar {
+   width: 250px;
+   float: left; 
+ }
+
+ /* Навигация */
+ .navigation{
+    overflow: hidden;
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+ }
+ .navigation .navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ .navigation .navigation-item {
+   border-top: 2px solid #3ba8c0;
+   margin: 0 11px;
+ }
+ .navigation .navigation-item:first-child{
+    border-top: none;
+ }
+   /* Навигация текущий пункт меню */
+ .navigation .navigation-item.current{
+    background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px; /*Хак */
+ }
+ .navigation .navigation-item.current .navigation-link{
+    color: #f9fafb;
+    font-size: 22px;
+ }
+ /*Навигация текущий пункт меню конец*/
+ .navigation .navigation-link {
+    font-family: 'fira_sansbook';
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0px;
+ }
+ .navigation .navigation-link:hover{
+    color: #3ba8c0;
+ }
+ /* Навигация конец */
+ .variable-content {
+    width: 650px;
+    float: right;
+ }
+ /* Контакты */
+ .my-contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+ }
+ .contacts-name {
+    color: #fff;
+    background: #3ba8c0;
+ }
+ .contacts-name .contacts-me {
+    color: white;
+    font-family: "fira_sansbook";
+    font-size: 21px;
+    font-weight: 300px; 
+    padding: 5px 20px;
+ }
+ .contacts-mail {
+    background: #41b9d4 url(../picter/mail.png) 37px 46% no-repeat;
+ }
+ .contacts-ad{
+    color: #fff;
+    text-decoration: none;
+ }
+ .contacts-ad:hover{
+   text-decoration: underline; 
+ }
+ .contacts-hum {
+   padding: 7px 20px;
+   color: #fbfcfd;
+   font-family: 'fira_sansbook';
+   font-size: 17px;
+   font-weight: 300px;
+   margin-left: 50px;
+ }
+ .contacts-phone {
+    background: #48cbe8 url(../picter/tel.png) 37px 46% no-repeat;
+ }
+.contacts-skype {
+    background: #51daf8 url(../picter/skype.png) 37px 46% no-repeat;
+}
+
+/*Правая колонка начало*/
+.variable-content{
+    float: right;
+    width: 650px;
+    margin-bottom: 12px;
+}
+.aboutbox{
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+.aboutbox-header{
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px solid #3ba8c0;
+    margin: 0 0 21px 0;
+    padding: 13px 21px;
+    display: inline-block;
+}
+.aboutbox-body{
+    padding-bottom: 40px;
+}
+.image-wrap{
+    float: left;
+    margin-left: 54px;
+    margin-top: 11px;
+}
+.avatar-box{
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #3ba8c0;
+}
+.avatar{
+    width: 100%;
+}
+
+.worksheet-wrap{
+    float: right;
+    width: 422px;
+}
+.worksheet-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.worksheet-item{
+    margin-bottom: 8px;
+}
+.worksheet-item:last-child{
+    margin-bottom: 0;
+}
+.worksheet-what{
+    font-family: 'fira_sansmedium';
+    font-size: 16px;
+    float: left;
+    letter-spacing: 0.6px;
+}
+
+.worksheet-info {
+  margin-left: 17px;
+}
+
+.skills-item{
+  background: -webkit-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+  background: -moz-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+  background: -ms-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+  background: -o-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+  background: linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+  height: 19px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  padding: 0 13px;
+  font-family: ProximaNovaCond-Semibold;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 8px;
+  margin-bottom: 9px;
+  line-height: 19px;
+
+} .box-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 50px;
+    margin-bottom: -15px;
+}
+.box-item{
+    padding-left: 76px;
+    margin-left: 0px;
+    margin-bottom: 19px;
+}
+.info-me{
+  padding-bottom: 40px;
+}
+.bag-icon{
+    background: url(../picter/bag.png) 9px center no-repeat;
+}
+.hat-icon{
+    background: url(../picter/hat.png) 6px center no-repeat;
+}
+.Doc-icon{
+    background: url(../picter/Doc.png) 15px center no-repeat;
+}
+.period{
+    font-family: 'fira_sanslight';
+    font-size: 15px;
+    line-height: 1;
+}
+
+    /*Футер*/
+.page-footer {
+    background-color: #eff3f7;
+    background-image: -webkit-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -moz-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -ms-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -o-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.lock-inner, .copyright {
+    font-family: FSLight;
+    color: #4a545d;
+}
+.lock-inner {
+    background: url(../picter/lock.png) left 50% no-repeat;
+    height: 32px;
+    position: absolute;
+    top: 26px;
+    line-height: 32px;
+    padding-left: 25px;
+
+}
+.copyright:hover {
+    background-image: url(../picter/unlock.png);
+}
+.copyright {
+    text-align: center;
+    margin: 0px 200px;
+    padding: 31px 0 28px 0;
+    font-size: 13px;
+}
+
+/* прибьём футер к низу*/
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto;
+}
+.wrapper:after {
+    content: "";
+    height: 80px;
+    display: block;
+}
+.page-footer {
+    min-width: 970px;
+    height: 80px;
+    margin-top: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+

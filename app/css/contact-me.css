@@ -1,0 +1,167 @@
+.link-background {
+     background-color:#48CBE8;
+     border-bottom: 17px solid #51DAF8;
+     height: 117px;
+     border-radius: 5px 5px 0px 0px;
+}
+
+.table-of-content-link {
+  line-height: 125px;
+  text-align: center;
+  margin: 0px;
+  color:#F9FAFB;
+  font-family: 'firasansbok';
+  font-size: 27px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.form {
+  width: 400px;
+  margin: 50px auto;
+  padding-bottom: 200px;
+
+}
+
+.name {
+  color: #A9AEB9;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+
+.caption {
+  color: #A9AEB9;
+  margin: 0px;
+  margin-bottom: 8px
+}
+
+.input {
+    width: 180px;
+    height: 30px;
+    font-family: 'fira_sanslight';
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px 3px;
+    border: 1px solid #48cbe8;
+    color: #A9AEB9;
+}
+
+.form .label {
+  display: inline-block;
+}
+
+.you-mail {
+  margin-left: 9px 
+}
+
+.you-message {
+  width: 400px;
+}
+
+.textarea {
+    width: 380px;
+    height: 177px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px 3px;
+    font-family: 'fira_sanslight';
+    font-size: 14px;
+    padding: 10px;
+    resize: none;
+    color: #A9AEB9;
+    margin-bottom: 19px;
+}
+
+.message {
+  margin:0px;
+  color: #A9AEB9;
+  margin: 0px;
+  padding-bottom: 7px;
+}
+
+.submit-one {
+    float: left;
+    padding: 2px;
+    width: 140px;
+    border: none;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    color: white;
+    background: url(image/spritebox-sprite_2.png) no-repeat;
+    background-position: -16px -94px;
+    height: 33px;
+    width: 139px
+}
+
+.submit-one:hover {
+   background-position: -16px -49px;
+     height: 33px;
+     width: 139px
+}
+
+.submit-one:active {
+  background-position: -16px -4px;
+    height: 33px;
+    width: 139px 
+}
+
+.submit-2 {
+  float: right;
+    padding: 2px;
+    width: 140px;
+    border: none;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    color: white;
+    background: url(image/spritebox-sprite_123.png) no-repeat;
+    background-position: -12px -49px;
+  height: 33px;
+  width: 141px
+}
+
+.submit-2:hover {
+   background-position: -12px -98px;
+  height: 33px;
+  width: 139px
+}
+
+.submit-2:active {
+  background-position: -12px -4px;
+  height: 33px;
+  width: 141px
+}
+
+.captcha-img {
+  float: left;
+  padding: 20px;
+  border: 1px solid #48cbe8;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.captcha-input {
+    margin: 28px 0px 0px 1px;
+    width: 190px;
+    height: 28px;
+    color: #48cbe8;
+    font-size: 13px;
+    border: 1px solid #48cbe8;
+    border-radius: 3px 3px;
+    font-family: 'fira_sanslight';
+    float: right;
+    padding-left: 8px;
+}
+
+.captcha-input::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+
+.input::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+
+.textarea::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+
+input[type="submit"]:focus { outline: none; }

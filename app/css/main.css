@@ -84,15 +84,19 @@ body {
   top: 36px;
 }
 .social-item {
+  list-style: none;
   display: inline-block;
-
- /* margin: 0 12px;*/
+  height: 47px;
+  width: 47px;
+  margin-left: 19px;
 }
 .social-link {
   background: url(../picter/res.png);
   display: block;
-  width: 47px;
-  height: 47px;
+  width: 100%;
+  height: 100%;
+  border: solid #dedede 1px;
+  text-indent: -9999px;
 }
 .vk {
   background-position: 0px 0px;
@@ -360,10 +364,52 @@ body {
     top: 26px;
     line-height: 32px;
     padding-left: 25px;
+    text-decoration: none;
 
 }
-.copyright:hover {
+.lock-inner:hover {
     background-image: url(../picter/unlock.png);
+}
+.copyright {
+    text-align: center;
+    margin: 0px 200px;
+    padding: 31px 0 28px 0;
+    font-size: 13px;
+}
+
+
+
+    /*Футер*/
+.footer {
+    background-color: #eff3f7;
+    background-image: -webkit-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -moz-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -ms-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: -o-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-image: linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.lock-inner, .copyright {
+    font-family: FSLight;
+    color: #4a545d;
+}
+/*.lock-inner {
+    background: url(../img/lock.png) left 50% no-repeat;
+    height: 32px;
+    position: absolute;
+    top: 26px;
+    line-height: 32px;
+    padding-left: 25px;
+}
+.copyright:hover {
+    background-image: url(../img/unlock.png);
 }
 .copyright {
     text-align: center;
@@ -378,17 +424,47 @@ body {
     min-height: 100%;
     min-width: 970px;
     height: auto;
+    margin-bottom: -80px;
 }
 .wrapper:after {
     content: "";
     height: 80px;
     display: block;
 }
-.page-footer {
+.footer {
+    position: relative;
     min-width: 970px;
     height: 80px;
-    margin-top: -80px;
+    /*margin-top: -80px;*/
+
+
+    clear: both;
+    background: #eff3f7;
 }
+
+
+/*.footer:before {
+  content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, white, #1c667a, white);
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

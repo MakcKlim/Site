@@ -1,0 +1,179 @@
+ /* Навигация */
+ .navigation{
+    overflow: hidden;
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+ }
+ .navigation .navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ .navigation .navigation-item {
+   border-top: 2px solid #3ba8c0;
+   margin: 0 11px;
+ }
+ .navigation .navigation-item:first-child{
+    border-top: none;
+ }
+   /* Навигация текущий пункт меню */
+ .navigation .navigation-item.current{
+    background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px; /*Хак */
+ }
+ .navigation .navigation-item.current .navigation-link{
+    color: #f9fafb;
+    font-size: 22px;
+ }
+ /*Навигация текущий пункт меню конец*/
+ .navigation .navigation-link {
+    font-family: 'fira_sansbook';
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0px;
+ }
+ .navigation .navigation-link:hover{
+    color: #3ba8c0;
+ }
+ /* Навигация конец */
+ .variable-content {
+    width: 650px;
+    float: right;
+ }
+ /* Контакты */
+ .my-contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+ }
+ .contacts-name {
+    color: #fff;
+    background: #3ba8c0;
+ }
+ .contacts-name .contacts-me {
+    color: white;
+    font-family: "fira_sansbook";
+    font-size: 21px;
+    font-weight: 300px; 
+    padding: 5px 20px;
+ }
+ .contacts-mail {
+    background: #41b9d4 url(../picter/mail.png) 37px 46% no-repeat;
+ }
+ .contacts-ad{
+    color: #fff;
+    text-decoration: none;
+ }
+ .contacts-ad:hover{
+   text-decoration: underline; 
+ }
+ .contacts-hum {
+   padding: 7px 20px;
+   color: #fbfcfd;
+   font-family: 'fira_sansbook';
+   font-size: 17px;
+   font-weight: 300px;
+   margin-left: 50px;
+ }
+ .contacts-phone {
+    background: #48cbe8 url(../picter/tel.png) 37px 46% no-repeat;
+ }
+.contacts-skype {
+    background: #51daf8 url(../picter/skype.png) 37px 46% no-repeat;
+}
+
+
+/*.page-content {
+  float: right;
+  width: 650px;
+}*/
+
+.page {
+    float: right;
+  width: 650px;  
+  background: #eff3f7;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  width: 650px;
+}
+
+.titl {
+  line-height: 70px;
+  border-bottom: 2px solid #3ba8c0;
+  width: 350px;
+  text-indent: 21px;
+  margin: 0px;
+  color: #3ba8c0;
+  font-family: 'firasansbok';
+  font-size: 27px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 1px;
+}
+.my-site {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.my-site .page-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.my-site-item {
+  position: relative;
+    margin: 15px 15px;
+    width: 179px;
+    height: 125px;
+    border: 2px solid rgb(81, 218, 248);
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgb(59, 168, 192);
+}
+
+.portfolio_box_load {
+  position: relative;
+    margin: 15px 15px;
+    width: 179px;
+    height: 125px;
+    border: 2px dashed rgb(81, 218, 248);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #edf8fc;
+
+}
+
+.wrap {
+  position: absolute;
+  /*background: url(image/1014006.jpg) no-repeat;*/
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 179px;
+  height: 125px;  
+  /*display: none;*/
+}
+
+
+
+.tex{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 17px;
+  color: #D8D8D8;
+  border-radius: 5px;   
+  padding: 6px;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+}

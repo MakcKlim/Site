@@ -1,3 +1,50 @@
+/* Навигация */
+ .navigation{
+    overflow: hidden;
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+ }
+ .navigation .navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ .navigation .navigation-item {
+   border-top: 2px solid #3ba8c0;
+   margin: 0 11px;
+ }
+ .navigation .navigation-item:first-child{
+    border-top: none;
+ }
+   /* Навигация текущий пункт меню */
+ .navigation .navigation-item.current{
+    background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px; /*Хак */
+ }
+ .navigation .navigation-item.current .navigation-link{
+    color: #f9fafb;
+    font-size: 22px;
+ }
+ /*Навигация текущий пункт меню конец*/
+ .navigation .navigation-link {
+    font-family: 'fira_sansbook';
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0px;
+ }
+ .navigation .navigation-link:hover{
+    color: #3ba8c0;
+ }
+
+
+
 .link-background {
      background-color:#48CBE8;
      border-bottom: 17px solid #51DAF8;

@@ -90,12 +90,12 @@ body {
   width: 47px;
   margin-left: 19px;
 }
-.social-link {
+.socials-link {
   background: url(../picter/res.png);
   display: block;
   width: 100%;
   height: 100%;
-  border: solid #dedede 1px;
+ 
   text-indent: -9999px;
 }
 .vk {
@@ -107,7 +107,7 @@ body {
 .fb {
   background-position: 0px -112px;
 }
-.gh {
+.gt {
   background-position: 0px -340px;
 }
 .vk:hover {
@@ -119,7 +119,7 @@ body {
 .fb:hover {
   background-position: 0px -169px;
 }
-.gh:hover {
+.gt:hover {
   background-position: 0px -397px;
 }
 

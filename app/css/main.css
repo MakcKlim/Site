@@ -64,7 +64,7 @@ body {
   .page-header .header-logo-link{
     position: absolute;
     top: 39px;
-    left: 0;
+    left: 70px;
   }
   .page-header .header-logo-text{
     position: absolute;
@@ -72,17 +72,10 @@ body {
   }
   .page-header .socials {
     position: absolute;
-    right: 0;
-    top: 36px;
+    right: 10px;
+    top: 20px;
   }
 
-
-
-.socials {
-  position: absolute;
-  right: -12px;
-  top: 36px;
-}
 .social-item {
   list-style: none;
   display: inline-block;

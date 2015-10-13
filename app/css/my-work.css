@@ -1,95 +1,4 @@
- /* Навигация */
- .navigation{
-    overflow: hidden;
-    background: #eff3f7;
-    border-radius: 4px;
-    margin-bottom: 26px;
- }
- .navigation .navigation-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- .navigation .navigation-item {
-   border-top: 2px solid #3ba8c0;
-   margin: 0 11px;
- }
- .navigation .navigation-item:first-child{
-    border-top: none;
- }
-   /* Навигация текущий пункт меню */
- .navigation .navigation-item.current{
-    background: #3ba8c0;
-    margin: 0;
-    border-bottom: none;
-    padding-left: 11px;
-    margin-bottom: -2px; /*Хак */
- }
- .navigation .navigation-item.current .navigation-link{
-    color: #f9fafb;
-    font-size: 22px;
- }
- /*Навигация текущий пункт меню конец*/
- .navigation .navigation-link {
-    font-family: 'fira_sansbook';
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: #959aa8;
-    margin-left: 16px;
-    padding: 20px 0px;
- }
- .navigation .navigation-link:hover{
-    color: #3ba8c0;
- }
- /* Навигация конец */
- .variable-content {
-    width: 650px;
-    float: right;
- }
- /* Контакты */
- .my-contacts {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 5px;
- }
- .contacts-name {
-    color: #fff;
-    background: #3ba8c0;
- }
- .contacts-name .contacts-me {
-    color: white;
-    font-family: "fira_sansbook";
-    font-size: 21px;
-    font-weight: 300px; 
-    padding: 5px 20px;
- }
- .contacts-mail {
-    background: #41b9d4 url(../picter/mail.png) 37px 46% no-repeat;
- }
- .contacts-ad{
-    color: #fff;
-    text-decoration: none;
- }
- .contacts-ad:hover{
-   text-decoration: underline; 
- }
- .contacts-hum {
-   padding: 7px 20px;
-   color: #fbfcfd;
-   font-family: 'fira_sansbook';
-   font-size: 17px;
-   font-weight: 300px;
-   margin-left: 50px;
- }
- .contacts-phone {
-    background: #48cbe8 url(../picter/tel.png) 37px 46% no-repeat;
- }
-.contacts-skype {
-    background: #51daf8 url(../picter/skype.png) 37px 46% no-repeat;
-}
+ 
 /* Мои работы */
 .page {
     float: right;
@@ -106,7 +15,7 @@
   text-indent: 21px;
   margin: 0px;
   color: #3ba8c0;
-  font-family: 'firasansbok';
+  font-family: 'firasans-book';
   font-size: 27px;
     font-weight: normal;
     font-style: normal;
@@ -164,7 +73,7 @@
   transform: translate(-50%, -50%);
   border: 2px solid;
 }
-.text-decor_1{
+.tex{
   position: absolute;
   top: 40%;
   left: 50%;
@@ -182,7 +91,7 @@
   font-size: 13px;
   font-weight: bold;
   width: 105px;
-  font-family: 'firasanslight';
+  font-family: 'firasans-light';
   color: #3BA8C0;
 }
 
@@ -221,4 +130,112 @@
 .img-link {
   text-decoration: none;
   color: #45ACC2;
+}
+/* всплывающая форма */
+
+.modal-wrapper {
+  display: none;
+  width: 363px;
+  background-color: #eff3f7;
+  border-radius: 7px;
+  overflow: hidden;
+  -webkit-box-shadow: -2px 0 31px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 0 31px 2px rgba(0,0,0,0.75);
+  box-shadow: -2px 0 31px 2px rgba(0,0,0,0.75);
+}
+.modal-header {
+  background-color: #48cbe8;
+  border-bottom: 9px solid #67dffa;
+  padding: 13px 0 10px 12px;
+  height: 43px;
+}
+.modal-title {
+  float: left;
+  font-size: 25px;
+  font-family: 'firasans-regular';
+  color: #fff;
+  font-weight: 400;
+}
+.b-clouse {
+  float: right;
+  padding-top: 5px;
+  margin-right: 13px;
+}
+.modal-body {
+  width: 320px;
+  margin: 0 auto;
+}
+.label {
+  padding-top: 12px;
+  font-family: 'firasans-book';
+  color: #959aa8;
+  font-size: 17px;
+}
+.modal-body > .form-group:nth-child(3) {
+  margin-top: -20px;
+}
+
+.input {
+  font-family: 'firasans-light';
+  font-size: 13px;
+  color: #48cbe8;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #48cbe8;
+  border-radius: 7px;
+  padding: 10px 0 9px 9px;
+}
+::-webkit-input-placeholder {
+  color: #48cbe8;
+}
+::-moz-placeholder {
+  color: #48cbe8;
+}
+:-moz-placeholder {
+  color: #48cbe8;
+}
+:-ms-input-placeholder {
+  color: #48cbe8;
+}
+
+.popup-item-add-project {
+  position: relative;
+}
+.textarea {
+  width: 100%;
+  height: 110px;
+  resize: none;
+  padding: 12px 0 10px 10px;
+  font-family: 'firasans-light';
+  font-size: 13px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #48cbe8;
+  border-radius: 7px;
+}
+
+.btn {
+  border: none;
+  font-family: 'firasans-book';
+  color: #fff;
+  font-size: 19px;
+  background-color: #48cbe8;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 8px 30px;
+  -webkit-box-shadow: inset 0 -4px 4px -1px rgba(0,0,0,0.51);
+  -moz-box-shadow: inset 0 -4px 4px -1px rgba(0,0,0,0.51);
+  box-shadow: inset 0 -4px 4px -1px rgba(0,0,0,0.51);
+}
+.btn:hover {
+  margin-top: 3px;
+  margin-bottom:19px;
+  box-shadow: none;
+  -webkit-transition: all 100ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
 }

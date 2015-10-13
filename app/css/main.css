@@ -57,7 +57,7 @@ body {
 }
   .page-header{
     height: 119px;
-    background: #eff3f7 url('../') bottom center no-repeat;
+    background: #eff3f7 bottom center no-repeat;
     position: relative;
     margin-bottom: 39px;
   }
@@ -156,7 +156,7 @@ body {
  }
  /*Навигация текущий пункт меню конец*/
  .navigation .navigation-link {
-    font-family: 'fira_sansbook';
+    font-family: 'firasans-book';
     display: block;
     font-size: 20px;
     text-decoration: none;
@@ -186,7 +186,7 @@ body {
  }
  .contacts-name .contacts-me {
     color: white;
-    font-family: "fira_sansbook";
+    font-family: "firasans-book";
     font-size: 21px;
     font-weight: 300px; 
     padding: 5px 20px;
@@ -204,17 +204,17 @@ body {
  .contacts-hum {
    padding: 7px 20px;
    color: #fbfcfd;
-   font-family: 'fira_sansbook';
+   font-family: 'firasans-book';
    font-size: 17px;
    font-weight: 300px;
-   margin-left: 50px;
+   margin-left: 70px;
  }
  .contacts-phone {
-    background: #48cbe8 url(../picter/tel.png) 37px 46% no-repeat;
+  background: #48cbe8 url(../picter/tel.png) 37px 46% no-repeat;
  }
 .contacts-skype {
-    background: #51daf8 url(../picter/skype.png) 37px 46% no-repeat;
-}
+  background: #51daf8 url(../picter/skype.png) 37px 46% no-repeat;
+ }
 
 /*Правая колонка начало*/
 .variable-content{
@@ -228,7 +228,7 @@ body {
     margin-bottom: 26px;
 }
 .aboutbox-header{
-    font-family: 'fira_sansbook';
+    font-family: 'firasans-book';
     font-size: 27px;
     font-weight: normal;
     color: #3ba8c0;
@@ -272,7 +272,7 @@ body {
     margin-bottom: 0;
 }
 .worksheet-what{
-    font-family: 'fira_sansmedium';
+    font-family: 'firasans-medium';
     font-size: 16px;
     float: left;
     letter-spacing: 0.6px;
@@ -324,7 +324,7 @@ body {
     background: url(../picter/Doc.png) 15px center no-repeat;
 }
 .period{
-    font-family: 'fira_sanslight';
+    font-family: 'firasans-light';
     font-size: 15px;
     line-height: 1;
 }
@@ -347,8 +347,9 @@ body {
     position: relative;
 }
 .lock-inner, .copyright {
-    font-family: FSLight;
+    font-family: 'firasans-light';
     color: #4a545d;
+
 }
 .lock-inner {
     background: url(../picter/lock.png) left 50% no-repeat;
@@ -358,10 +359,11 @@ body {
     line-height: 32px;
     padding-left: 25px;
     text-decoration: none;
-
+     text-indent: -9999px;
 }
 .lock-inner:hover {
     background-image: url(../picter/unlock.png);
+    
 }
 .copyright {
     text-align: center;
@@ -369,30 +371,7 @@ body {
     padding: 31px 0 28px 0;
     font-size: 13px;
 }
-
-
-
-    /*Футер*/
-.footer {
-    background-color: #eff3f7;
-    background-image: -webkit-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
-    background-image: -moz-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
-    background-image: -ms-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
-    background-image: -o-linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
-    background-image: linear-gradient(90deg , #e7eff3, #1e677b, #e7eff3);
-    background-size: 100% 3px;
-    background-repeat: no-repeat;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    position: relative;
-}
-.lock-inner, .copyright {
-    font-family: FSLight;
-    color: #4a545d;
-}
+    
 
 
 /* прибьём футер к низу*/

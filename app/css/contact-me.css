@@ -1,62 +1,15 @@
-/* Навигация */
- .navigation{
-    overflow: hidden;
-    background: #eff3f7;
-    border-radius: 4px;
-    margin-bottom: 26px;
- }
- .navigation .navigation-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- .navigation .navigation-item {
-   border-top: 2px solid #3ba8c0;
-   margin: 0 11px;
- }
- .navigation .navigation-item:first-child{
-    border-top: none;
- }
-   /* Навигация текущий пункт меню */
- .navigation .navigation-item.current{
-    background: #3ba8c0;
-    margin: 0;
-    border-bottom: none;
-    padding-left: 11px;
-    margin-bottom: -2px; /*Хак */
- }
- .navigation .navigation-item.current .navigation-link{
-    color: #f9fafb;
-    font-size: 22px;
- }
- /*Навигация текущий пункт меню конец*/
- .navigation .navigation-link {
-    font-family: 'firasans-book';
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: #959aa8;
-    margin-left: 16px;
-    padding: 20px 0px;
- }
- .navigation .navigation-link:hover{
-    color: #3ba8c0;
- }
-
-
 .information{
   background: #eff3f7;
   border-radius: 5px;
   margin-bottom: 25px;
   width: 650px;
-}
+ }
 .link-background {
      background-color:#48CBE8;
      border-bottom: 17px solid #51DAF8;
      height: 117px;
      border-radius: 5px 5px 0px 0px;
 }
-
 .table-of-content-link {
   line-height: 125px;
   text-align: center;
@@ -67,26 +20,21 @@
     font-weight: normal;
     font-style: normal;
 }
-
 .form {
   width: 400px;
   margin: 50px auto;
-  padding-bottom: 200px;
-
+  padding-bottom: 80px;
 }
-
 .name {
   color: #A9AEB9;
   margin: 0px;
   padding-bottom: 7px;
 }
-
 .caption {
   color: #A9AEB9;
   margin: 0px;
   margin-bottom: 8px
 }
-
 .input {
     width: 180px;
     height: 30px;
@@ -98,19 +46,15 @@
     border: 1px solid #48cbe8;
     color: #A9AEB9;
 }
-
 .form .label {
   display: inline-block;
 }
-
 .you-mail {
   margin-left: 9px 
 }
-
 .you-message {
   width: 400px;
 }
-
 .textarea {
     width: 380px;
     height: 177px;
@@ -123,14 +67,12 @@
     color: #A9AEB9;
     margin-bottom: 19px;
 }
-
 .message {
   margin:0px;
   color: #A9AEB9;
   margin: 0px;
   padding-bottom: 7px;
 }
-
 .submit-one {
     float: left;
     padding: 2px;
@@ -146,19 +88,16 @@
     width: 139px;
     box-shadow: 2px 2px 3px rgba(0,0,0, .5);
 }
-
 .submit-one:hover {
    background-position: -12px -98px;
      height: 33px;
      width: 139px
 }
-
 .submit-one:active {
   background-position: -12px -4px;
   height: 33px;
   width: 139px 
 }
-
 .submit-2 {
   float: right;
   padding: 2px;
@@ -173,13 +112,11 @@
   height: 33px;
   box-shadow: 2px 2px 3px rgba(0,0,0, .5);
 }
-
 .submit-2:hover {
   background-position: -12px -98px;
   height: 33px;
   width: 139px
 }
-
 .submit-2:active {
   background-position: -12px -4px;
   height: 33px;
@@ -192,9 +129,7 @@
   margin-bottom: 30px;
   width: 190px;
   height: 80px;
-
 }
-
 .captcha-input {
     margin: 28px 0px 0px 1px;
     width: 140px;
@@ -207,17 +142,13 @@
     float: right;
     padding-left: 14px;
 }
-
 .captca-input::-webkit-input-placeholder {
   color: #48cbe8;
 }
-
 .input::-webkit-input-placeholder {
   color: #48cbe8;
 }
-
 .textarea::-webkit-input-placeholder {
   color: #48cbe8;
 }
-
 input[type="submit"]:focus { outline: none; }

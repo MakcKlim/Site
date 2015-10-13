@@ -1,0 +1,119 @@
+.form-text {
+  width: 590px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: -145px 0 0 -295px;
+  background: #eff3f7;
+  vertical-align: top;
+  margin-bottom: 25px;
+  padding: 15px 0 40px 0;
+  border-radius: 0 0 5px 5px;
+}
+.avtor {
+  margin: 0;
+  padding: 0;
+  padding: 20px 50px 0 50px;
+  color: white;
+  font-weight: normal;
+  background: #48CBE8;
+  margin-top: -15px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 5px 5px 0 0;
+}
+.avtor:after {
+  content: " ";
+  display: block;
+  height: 20px;
+  background: #51DAF8;
+  margin: 10px -50px -30px -50px;
+}
+.head-form {
+  width: 425px;
+  margin: 0 auto;
+}
+.login-enter {
+  margin-bottom: 10px;
+}
+.username {
+  color: #b2bac1;
+  font-size: 36px;
+  text-align: center;
+  display: block;
+}
+.login,
+.login-text {
+  display: block;
+  min-width: 170px;
+  width: 100%;
+  border: 1px solid #3ba8c0;
+  font-size: 16px;
+  color: #48CBE8;
+  padding: 23px;
+  background: #fbfcfd;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.login-text {
+  width: 100%;
+  box-sizing: border-box;
+  height: 185px;
+}
+.login-captcha-code {
+  padding: 5px 10px;
+  margin-top: 12%;
+}
+.login-captcha {
+  border: 1px solid #3ba8c0;
+}
+.info-block {
+ background: #eff3f7;
+ vertical-align: top;
+ margin-bottom: 25px;
+ padding: 15px 0 40px 0;
+}
+.login-enter{
+    text-align: center;
+}
+.my-password {
+  padding: 0 60px;
+  border: 0;
+  color: white;
+  background: #48CBE8;
+  border-bottom: 2px solid #19aaca;
+  font-size: 36px;
+}
+.my-password:hover {
+  padding-top: 2px;
+  border: 0;
+}
+.my-password:active,
+{
+  border-bottom: 0;
+  border-top: 1px solid;
+}
+
+.my-password:focus {
+  border-top-color: #616e79;
+}
+
+::-webkit-input-placeholder {
+  color: #48CBE8;
+  font-size: 16px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #48CBE8;
+  font-size: 16px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #48CBE8;
+  font-size: 16px;
+}
+:-ms-input-placeholder {
+  color: #48CBE8;
+  font-size: 16px;
+}

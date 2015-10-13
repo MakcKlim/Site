@@ -73,7 +73,7 @@
   transform: translate(-50%, -50%);
   border: 2px solid;
 }
-.cont .tex {
+.cont  {
     height: 124px;
     text-align: center;
     width: 176px;
@@ -86,7 +86,7 @@
     opacity: 0;
 }
 
-/*.tex{
+.tex{
     text-decoration: none;
   position: absolute;
   top: 40%;
@@ -95,7 +95,7 @@
   color: #D8D8D8;
   border-radius: 5px;   
   transform: translate(-50%, -50%); 
-}*/
+}
 
 .ready {
   position: absolute;
@@ -151,7 +151,7 @@
 
 
 #new-progect-popup{
- /* display: none;*/
+ display: none;
 }
 
 .modal-wrapper {

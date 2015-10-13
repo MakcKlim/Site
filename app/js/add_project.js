@@ -1,53 +1,73 @@
 var myModule=(function
      (){
+//инициализирует модуль
         var init=function () {
             _setUpListners();
         };
+// прослушивает события
         var _setUpListners=function () {
                $('#add-new-item').on('click', _showModal);
                $('#add-new-project').on('submit', _addProject);
         };
+// Работает с модальным окном
         var _showModal=function(ev){
             ev.preventDefault();
-            console.log('Вызов модального окна');
-            $('#new-progect-popup').bPopup({
+
+
+            var divPopup = $('#new-progest-popup'),
+            form = divPopup.find('.form');
+
+            divPopup.bPopup({
                 speed:650,
-                translition:'slideDown'
+                translition:'slideDown',
+                onClose: function() {
+                    form.find('.server-mes').text('').hide();
+                }
             });
         };
-        var _addProject=function(ev){
+// добавляет проект
+        var _addProject=function(ev) {
             ev.preventDefault();
-            console.log('Добавление проекта');
-// обьявляем переменные
+
             var form = $(this),
             url ='add_project.php',
-            data=form.serialize();
+            myServerGiveMeAnAnswer = _ajaxForm(form, url);
+
+            myServerGiveMeAnAnswer.done(function(ans) {
 
 
+            var succesBox = form.find('.succes-mes'),
+                errorBox = form.find('.error-mes');
 
-// Запрос на сервер
-        $ajax({
+            if(ans.status ==='OK') {
+                errorBox.hide();
+                succesBox.text(ans.text).show();
+            } else {
+                succesBox.hide();
+                errorBox.text(ans.text).show();
+            }
+           })
+        };
+// универсальная функция
+// для ее работы используються
+// @form - форма
+//@url - адрес php файла, к которому мы обращаемся
+//   1. собирает данные из формы
+//   2. проверяет форму
+//   3. делает запрос на сервер и возвращает ответ с сервера
+        var _ajaxForm = function(form, url) {
+             data=form.serialize();
+        var result = $.ajax({
             url: url,
             type: 'POST',
             dataType: 'json',
             data: data,
-        })
-        .done(function(ans) {
-            console.log("success");
-            if(ans.mes ==='OK') {
-                form.find('.success-mes').text(ans.text);
-            } else {
-                form.find('.error-mes').text(ans.text);
-            }
-           
-        })
-        .fail(function() {
-            console.log("error");
-        })
-        .always(function() {
-            console.log("complete");
+        }).fail( function(ans) {
+            form.find('.error-mes').text('На сервере произошла ошибка').show();
         });
+             return result;
         };
+// возвращаем обьект (публичные методы)        
         return {
             init: init
         };

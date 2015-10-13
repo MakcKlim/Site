@@ -73,7 +73,21 @@
   transform: translate(-50%, -50%);
   border: 2px solid;
 }
-.tex{
+.cont .tex {
+    height: 124px;
+    text-align: center;
+    width: 176px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    box-sizing: border-box;
+    background-color: rgba(1, 108, 164, 0.75);
+    z-index: 20;
+    opacity: 0;
+}
+
+/*.tex{
+    text-decoration: none;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -81,7 +95,7 @@
   color: #D8D8D8;
   border-radius: 5px;   
   transform: translate(-50%, -50%); 
-}
+}*/
 
 .ready {
   position: absolute;
@@ -131,11 +145,17 @@
   text-decoration: none;
   color: #45ACC2;
 }
+
+
 /* всплывающая форма */
 
+
+#new-progect-popup{
+ /* display: none;*/
+}
+
 .modal-wrapper {
-  display: none;
-  width: 363px;
+  width: 390px;
   background-color: #eff3f7;
   border-radius: 7px;
   overflow: hidden;
@@ -150,68 +170,31 @@
   height: 43px;
 }
 .modal-title {
-  float: left;
-  font-size: 25px;
-  font-family: 'firasans-regular';
-  color: #fff;
-  font-weight: 400;
+    height: 42px;
+    background-color: #48cbe8;
+    border-bottom: px #67dffa solid;
+    font-family: "Fira Sans Regular";
+    font-size: 25px;
+    color: white;
+    line-height: 44px;
+    padding: 2px 0 0 4px;
+    margin: 0;
+    margin-bottom: 5px;
 }
-.b-clouse {
+.popup-close {
   float: right;
-  padding-top: 5px;
-  margin-right: 13px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    background: url("../picter/No.png");
+    text-indent: -9999px;
 }
 .modal-body {
   width: 320px;
   margin: 0 auto;
-}
-.label {
-  padding-top: 12px;
-  font-family: 'firasans-book';
-  color: #959aa8;
-  font-size: 17px;
-}
-.modal-body > .form-group:nth-child(3) {
-  margin-top: -20px;
-}
-
-.input {
-  font-family: 'firasans-light';
-  font-size: 13px;
-  color: #48cbe8;
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #48cbe8;
-  border-radius: 7px;
-  padding: 10px 0 9px 9px;
-}
-::-webkit-input-placeholder {
-  color: #48cbe8;
-}
-::-moz-placeholder {
-  color: #48cbe8;
-}
-:-moz-placeholder {
-  color: #48cbe8;
-}
-:-ms-input-placeholder {
-  color: #48cbe8;
-}
-
-.popup-item-add-project {
-  position: relative;
-}
-.textarea {
-  width: 100%;
-  height: 110px;
-  resize: none;
-  padding: 12px 0 10px 10px;
-  font-family: 'firasans-light';
-  font-size: 13px;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  border: 1px solid #48cbe8;
-  border-radius: 7px;
 }
 
 .btn {
@@ -239,3 +222,68 @@
   -o-transition: all 100ms ease;
   transition: all 100ms ease;
 }
+
+.form-group .label{
+  display: block;
+    font-family: 'fira_sansbook';
+    font-size: 17px;
+    color: #959aa8;
+    font-weight: normal;
+ }
+.form-group{
+ position: relative;
+ }
+ .input{
+  display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 100%;
+    border: solid 1px #48cbe8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    color: #48cbe8;
+ }
+
+.fileupload-lable{
+  display: block;
+  width: 40px;
+  height: 41px;
+  position: absolute;
+  right: 0;
+  background: url(../picter/cloud-hov.png) no-repeat;
+  background-color: #48cbe8;
+  border-radius: 0 4px 4px 0;
+}
+.fileupload{ /* хак, взятый из html5boilerplate */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+ .textarea{
+  border-radius: 2px;
+    border:1px solid #48cbe8;
+    color: #48cbe8;
+    display: block;
+    resize: none;
+    width: 100%;
+    min-height: 111px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-bottom: 20px;
+ }
+
+/*Модальное окно  конец*/
+/*placeholder начало*/
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+
+/*placeholder конец*/

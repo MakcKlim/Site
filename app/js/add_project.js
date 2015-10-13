@@ -4,20 +4,20 @@ var myModule=(function
             _setUpListners();
         };
         var _setUpListners=function () {
-               $('add-new-item').on('clic', _showModal);
-               $('add-new-project').on('submit', _addProject);
+               $('#add-new-item').on('click', _showModal);
+               $('#add-new-project').on('submit', _addProject);
         };
         var _showModal=function(ev){
-            console.log('Вызов модального окна');
             ev.preventDefault();
-            $('new-progect-popup').bPopup({
+            console.log('Вызов модального окна');
+            $('#new-progect-popup').bPopup({
                 speed:650,
                 translition:'slideDown'
             });
         };
         var _addProject=function(ev){
-            console.log('Добавление проекта');
             ev.preventDefault();
+            console.log('Добавление проекта');
 // обьявляем переменные
             var form = $(this),
             url ='add_project.php',

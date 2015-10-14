@@ -12,7 +12,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <!-- bower CSS -->
   <link rel="stylesheet" href="bower/normalize.css/normalize.css">
-
+  <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
   <!-- FONTS -->
   <link rel="stylesheet" href="fonts/fira/fira.css">
   <link rel="stylesheet" href="fonts/Proxima-Nova/Proxima-Nova.css">
@@ -53,13 +53,13 @@
         <h2 class="avtor">Авторизируйтесь</h2>
         
         <div class="form-container clearfix">
-          <form class="head-form">
+          <form id="login-open" class="head-form">
             <div class="block-content clearfix">
               <label class="username" for="login">Логин</label>
-              <input type="text" required class="login" placeholder="Введите логин" class="log-input">
+              <input type="text" class="login" placeholder="Введите логин" qtip-content="Вы не ввели логин" class="input">
 
               <label class="username" for="login">Пароль</label>
-              <input type="password" required class="login" placeholder="Введите пароль" class="log-input"></div>
+              <input type="password" class="login" placeholder="Введите пароль" qtip-content="Вы не ввели пароль" class="input"></div>
             <div class="login-enter">
               <input type="submit" class="my-password" value="Войти"></div>
           </form>
@@ -77,5 +77,9 @@
         </div>
       </div>
     </footer>
+     <script src="bower/jquery/dist/jquery.js"></script>
+     <script src="bower/qtip2/jquery.qtip.js"></script>  
+     <script src="js/login.js"></script>
+     <script src="js/validation.js"></script>
 </body>
   </html>

@@ -94,6 +94,13 @@
   border-bottom: 0;
   border-top: 1px solid;
 }
+.has-error {
+    background-color: #fad2d1 ;
+    border-color: #f97e76 ;
+}
+.qtip {
+  font-size: 14px;
+}
 
 .my-password:focus {
   border-top-color: #616e79;

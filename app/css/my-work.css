@@ -15,7 +15,7 @@
   text-indent: 21px;
   margin: 0px;
   color: #3ba8c0;
-  font-family: 'firasans-book';
+  font-family: 'fira_sansbook';
   font-size: 27px;
     font-weight: normal;
     font-style: normal;
@@ -63,7 +63,7 @@
   height: 125px;  
 }
 .tex{
-  position: absolute;
+position: absolute;
   top: 40%;
   left: 50%;
   font-size: 17px;
@@ -105,7 +105,7 @@
   font-size: 13px;
   font-weight: bold;
   width: 105px;
-  font-family: 'firasans-light';
+  font-family: 'fira_sanslight';
   color: #3BA8C0;
 }
 
@@ -130,7 +130,6 @@
 }
 
 .page-item .info {
-  font-size: 15px;
   display: block;
   text-align: center;
   color: rgb(109, 109, 109);
@@ -173,7 +172,7 @@
     height: 42px;
     background-color: #48cbe8;
     border-bottom: px #67dffa solid;
-    font-family: "Fira Sans Regular";
+    font-family: "fira_sansbook";
     font-size: 25px;
     color: white;
     line-height: 44px;
@@ -187,8 +186,8 @@
     position: absolute;
     top: 10px;
     right: 12px;
-    width: 25px;
-    height: 25px;
+    width: 31px;
+    height: 33px;
     background: url("../picter/No.png");
     text-indent: -9999px;
 }
@@ -199,7 +198,7 @@
 
 .btn {
   border: none;
-  font-family: 'firasans-book';
+  font-family: 'fira_sansbook';
   color: #fff;
   font-size: 19px;
   background-color: #48cbe8;
@@ -278,6 +277,13 @@
     padding-left: 20px;
     margin-bottom: 20px;
  }
+ .has-error {
+    background-color: #fad2d1 ;
+    border-color: #f97e76 ;
+}
+.qtip {
+  font-size: 14px;
+}
 
 /*Модальное окно  конец*/
 /*placeholder начало*/

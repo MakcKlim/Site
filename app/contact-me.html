@@ -13,6 +13,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!-- FONTS -->
     <link rel="stylesheet" href="fonts/fira/fira.css">
     <link rel="stylesheet" href="fonts/Proxima-Nova/Proxima-Nova.css">
@@ -98,18 +99,18 @@
              <h2 class="table-of-content-link">У Вас интересный проект? Напишите мне</h2>
          </div>
          <div class="form clearfix">
-             <form name="form" method="post" action>
+             <form id="formPost" method="post" action="contactme.php">
                  <label for class=" label you-name clearfix">
                      <p class="name">Имя</p>
-                     <input class="input" type="text" name="name" id="name" placeholder="Как к Вам обращаться?">
+                     <input class="input" type="text" name="name" placeholder="Как к Вам обращаться?" qtip-content="Вы не ввели имя">
                  </label>
                    <label for class=" label you-mail clearfix">
                      <p class="name">Email</p>
-                     <input class="input" type="text" name="name" id="name" placeholder="Куда мне писать?">
+                     <input class="input " type="text" name="mail" placeholder="Куда мне писать?" qtip-content="Вы не ввели email" qtip-position="right">
                  </label>
                  <label for class=" label you-message clearfix">
-                     <p class="message">Кратко о себе</p>
-                     <textarea class="textarea" name="message" id="message" placeholder="Кратко в чем суть?"></textarea>
+                     <p class="message">Сообщение</p>
+                     <textarea class="textarea" name="message" placeholder="Кратко в чем суть?" qtip-content="Что Вы от меня хотите"></textarea>
                  </label>
                  <label for class=" label capha clearfix">
                      <p class="caption">Введите код,указанный на картинке</p>
@@ -117,10 +118,10 @@
                  </label>
                  <img class="captha-img" src="../picter/Capcha1.png">
                  <label class="captca-code clearfix">
-                 <input class="captcha-input" value type="text" name="name" id="name" placeholder="Введите код"></label>
+                 <input class="captcha-input" value type="text" name="captcha" placeholder="Введите код" qtip-content="Вы не ввели код" qtip-position="right"></label>
                  <div class="clearfix">
                      <input class="submit-one" type="submit" name="submit" id="submit" value="Отправить">
-                     <input class="submit-2" type="reset" name="submit" id="submit" value="Очистить">
+                     <input class="submit-2" type="reset" name="submit-2" id="submit" value="Очистить">
                  </div>
              </form>
          </div>
@@ -139,6 +140,10 @@
     </div>
     <div class="copyright">&copy; 2015, Это мой сайт,пожалуйста, не копируйте и не воруйте его</div>
   </div>
-</footer> 
+</footer>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>  
+<script src="js/contact_me.js"></script>
+<script src="js/validation.js"></script>
 </body> 
 </html>     

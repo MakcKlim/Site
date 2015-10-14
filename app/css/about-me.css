@@ -16,12 +16,12 @@
     margin-bottom: 8px;
 }
 .worksheet-what {
-    font-family: 'firasans-medium';
+    font-family: 'fira_sansmedium';
     font-size: 16px;
     float: left;
 }
 .worksheet-info {
-    font-family: 'firasans-book';
+    font-family: 'fira_sansbook';
     font-size: 15px;
     overflow: hidden;
     max-width: 218px;

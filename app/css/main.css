@@ -156,7 +156,7 @@ body {
  }
  /*Навигация текущий пункт меню конец*/
  .navigation .navigation-link {
-    font-family: 'firasans-book';
+    font-family: 'fira_sansbook';
     display: block;
     font-size: 20px;
     text-decoration: none;
@@ -186,7 +186,7 @@ body {
  }
  .contacts-name .contacts-me {
     color: white;
-    font-family: "firasans-book";
+    font-family: "fira_sansbook";
     font-size: 21px;
     font-weight: 300px; 
     padding: 5px 20px;
@@ -204,7 +204,7 @@ body {
  .contacts-hum {
    padding: 7px 20px;
    color: #fbfcfd;
-   font-family: 'firasans-book';
+   font-family: 'fira_sansbook';
    font-size: 17px;
    font-weight: 300px;
    margin-left: 70px;
@@ -228,7 +228,7 @@ body {
     margin-bottom: 26px;
 }
 .aboutbox-header{
-    font-family: 'firasans-book';
+    font-family: 'fira_sansbook';
     font-size: 27px;
     font-weight: normal;
     color: #3ba8c0;
@@ -272,7 +272,7 @@ body {
     margin-bottom: 0;
 }
 .worksheet-what{
-    font-family: 'firasans-medium';
+    font-family: 'fira_sansmedium';
     font-size: 16px;
     float: left;
     letter-spacing: 0.6px;
@@ -281,6 +281,15 @@ body {
 .worksheet-info {
   margin-left: 17px;
 }
+.skills-list {
+
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    padding-left: 160px;
+    box-sizing: border-box;
+}
+
 
 .skills-item{
   background: -webkit-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
@@ -324,7 +333,7 @@ body {
     background: url(../picter/Doc.png) 15px center no-repeat;
 }
 .period{
-    font-family: 'firasans-light';
+    font-family: 'fira_sanslight';
     font-size: 15px;
     line-height: 1;
 }
@@ -347,7 +356,7 @@ body {
     position: relative;
 }
 .lock-inner, .copyright {
-    font-family: 'firasans-light';
+    font-family: 'fira_sanslight';
     color: #4a545d;
 
 }

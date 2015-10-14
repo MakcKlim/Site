@@ -15,7 +15,7 @@
   text-align: center;
   margin: 0px;
   color:#F9FAFB;
-  font-family: 'firasans-book';
+  font-family: 'fira_sansbook';
   font-size: 27px;
     font-weight: normal;
     font-style: normal;
@@ -38,13 +38,17 @@
 .input {
     width: 180px;
     height: 30px;
-    font-family: 'firasans-light';
+    font-family: 'fira_sanslight';
     font-size: 14px;
     padding-left: 10px;
     margin-bottom: 20px;
     border-radius: 3px 3px;
     border: 1px solid #48cbe8;
     color: #A9AEB9;
+}
+.has-error {
+    background-color: #fad2d1 ;
+    border-color: #f97e76 ;
 }
 .form .label {
   display: inline-block;
@@ -60,7 +64,7 @@
     height: 177px;
     border: 1px solid #48cbe8;
     border-radius: 3px 3px;
-    font-family: 'firasans-light';
+    font-family: 'fira_sanslight';
     font-size: 14px;
     padding: 10px;
     resize: none;
@@ -78,14 +82,13 @@
     padding: 2px;
     width: 140px;
     border: none;
-    font-family: 'firasans-book';
+    font-family: 'fira_sansbook';
     font-size: 19px;
     color: white;
     background:#48cbe8;
     background-position: -12px -49px;
     border-radius: 5px;
     height: 33px;
-    width: 139px;
     box-shadow: 2px 2px 3px rgba(0,0,0, .5);
 }
 .submit-one:hover {
@@ -103,7 +106,7 @@
   padding: 2px;
   width: 140px;
   border: none;
-  font-family: 'firasans-book';
+  font-family: 'fira_sansbook';
   font-size: 19px;
   color: white;
   background:#48cbe8;
@@ -119,8 +122,6 @@
 }
 .submit-2:active {
   background-position: -12px -4px;
-  height: 33px;
-  width: 141px;
 }
 .captha-img {
   float: left;
@@ -138,12 +139,15 @@
     font-size: 13px;
     border: 1px solid #48cbe8;
     border-radius: 3px 3px;
-    font-family: 'firasans-light';
+    font-family: 'fira_sanslight';
     float: right;
     padding-left: 14px;
 }
 .captca-input::-webkit-input-placeholder {
   color: #48cbe8;
+}
+.qtip {
+  font-size: 14px;
 }
 .input::-webkit-input-placeholder {
   color: #48cbe8;

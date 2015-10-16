@@ -4,6 +4,13 @@ var myModule=(function
         var init=function () {
             _setUpListners();
         };
+        $(document).ready(function($) {
+ 
+ if(!Modernizr.input.placeholder){ 
+  $('input, textarea').placeholder();
+}
+
+});
 // прослушивает события
         var _setUpListners=function () {
                $('#add-new-item').on('click', _showModal);

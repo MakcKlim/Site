@@ -26,6 +26,7 @@
   padding-bottom: 80px;
 }
 .name {
+  font-family: "fira_sanslight";
   color: #A9AEB9;
   margin: 0px;
   padding-bottom: 7px;
@@ -44,7 +45,7 @@
     margin-bottom: 20px;
     border-radius: 3px 3px;
     border: 1px solid #48cbe8;
-    color: #A9AEB9;
+    color: #48cbe8;
 }
 .has-error {
     background-color: #fad2d1 ;
@@ -68,7 +69,7 @@
     font-size: 14px;
     padding: 10px;
     resize: none;
-    color: #A9AEB9;
+    color: #48cbe8;
     margin-bottom: 19px;
 }
 .message {
@@ -109,7 +110,7 @@
   font-family: 'fira_sansbook';
   font-size: 19px;
   color: white;
-  background:#48cbe8;
+  background:#849db5;
   background-position: -12px -49px;
   border-radius: 5px;
   height: 33px;
@@ -133,8 +134,8 @@
 }
 .captcha-input {
     margin: 28px 0px 0px 1px;
-    width: 140px;
-    height: 28px;
+    width: 182px;
+    height: 38px;
     color: #48cbe8;
     font-size: 13px;
     border: 1px solid #48cbe8;
@@ -142,6 +143,7 @@
     font-family: 'fira_sanslight';
     float: right;
     padding-left: 14px;
+    margin-top: 17px;
 }
 .captca-input::-webkit-input-placeholder {
   color: #48cbe8;

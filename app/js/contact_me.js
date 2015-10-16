@@ -4,6 +4,13 @@ var contactMe = (function (){
  var init = function () {
     _setUpListners();
    };
+   $(document).ready(function($) {
+ 
+ if(!Modernizr.input.placeholder){ 
+  $('input, textarea').placeholder();
+}
+
+});
 
  // Прослушивает события
  var _setUpListners = function () {
